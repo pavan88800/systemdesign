@@ -119,7 +119,7 @@ Suppose you have 10,000 items, but only 10 are visible at a time.
 
 The library creates DOM elements only for those visible items (plus maybe a few extra as a buffer).
 
-As you scroll, same DOM elements will shows the new data.
+As users scroll, it updates the content by reusing DOM elements.
 
 So instead of creating 10,000 elements, it creates only as many as are needed (like 10–20), and reuses them.
 
@@ -134,3 +134,9 @@ So instead of creating 10,000 elements, it creates only as many as are needed (l
 ✔ Scrolling stays smooth, even with very large datasets.
 
 ✔ Users don’t notice that only a small subset is rendered at once.
+
+---
+
+## NOTES:-
+
+Creating many DOM elements means each one occupies memory, and that’s where the problem starts when rendering large lists.
