@@ -23,10 +23,14 @@ When you try to render a large dataset all at once in your UI (for example, thou
 - Manage memory for these elements.
 
 This leads to:
-✔ Slow rendering
-✔ Janky or laggy while scrolling
-✔ High memory consumption
-✔ Poor user experience
+
+- Slow rendering
+
+- Janky or laggy while scrolling
+
+- High memory consumption
+
+- Poor user experience
 
 ---
 
