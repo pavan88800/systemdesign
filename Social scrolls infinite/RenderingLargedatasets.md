@@ -192,3 +192,9 @@ Creating many DOM elements means each one occupies memory, and that’s where th
 - Displaying thousands of chat messages but only rendering the few visible on screen.
 
 ---
+
+## infinite scroll Edge Case:
+
+- Show Loader: Display a loading indicator whenever an API request is in progress to fetch more data.
+
+- Handle End of Data: Detect when there is no more data to load and inform the user (e.g., show a “No more items” message or stop triggering further requests).
