@@ -12,6 +12,16 @@
 
 ---
 
+## overview
+
+Problem identification: Rendering a large dataset (thousands of posts/images) all at once causes performance issues because the browser has to create many DOM elements, calculate layouts, and manage memory. ✔ Correct
+
+Solution: Use virtualization — render only the items visible in the viewport. ✔ Correct
+
+Dynamic update: As the user scrolls, update the rendered items based on the viewport and reuse the same DOM elements. ✔ Correct
+
+---
+
 ## What you mean rendering a Large List
 
 <!-- When you try to render a large dataset all at once in your UI (for example, thousands of posts, comments, or images), the browser has to: -->
@@ -180,3 +190,5 @@ Creating many DOM elements means each one occupies memory, and that’s where th
 ## Example use case:
 
 - Displaying thousands of chat messages but only rendering the few visible on screen.
+
+---
